@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/layout2.css">
+    <title>inline-block 사용</title>
+</head>
+<body>
+    <!-- 이렇게 해도 괜찮다(상속 스타일이 가장 우선순위가 낮음) -->
+    <div class="container" style="font-size: 0px;">
+        <div class="header"></div>
+        <!-- 이런식으로 공백을 없애야 inline-block이 적용됨 -->
+        <div class="left"><p>안녕</p></div><div class="right"><p>안녕하세요</p></div>
+        <!--어울림 같은 기능을 한다.-->
+        <div class="footer"></div>
+    </div>
+</body>
+</html>
