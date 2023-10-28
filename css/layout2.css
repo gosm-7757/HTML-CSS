@@ -1,3 +1,13 @@
+body{
+    margin: 0px;
+    font-family: '이쁜폰트';
+}
+ /* 용량 줄이려면 woff파일 */
+@font-face{
+    font-family:'이쁜폰트';
+    src: url(../font/NanumSquareR.woff);
+}
+
 .container{
     width:800px;
 }
@@ -28,4 +38,21 @@
     width:100%;
     height: 100px;
     background-color: grey;
+}
+
+
+.flex-container{
+    display: flex; /*가로정렬*/
+    justify-content: center; /*가운데 정렬 flex-end, flex-start*/
+    /* flex-direction: column; */
+    flex-wrap: wrap; /* 가로폭이 넓으면 알아서 세로정렬 */
+    height: 500px;
+    align-items: center; /*세로 간격 맞추기*/
+    }
+
+.flex-item{
+    width:100px;
+    height: 100px;
+    background-color: grey;
+    margin: 5px;
 }
