@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <title>Document</title>
+    <style>
+        .main-background{
+            width: 100%;
+            height: 500px;
+            background-image: url(./img/shoes.jpg);
+            /*background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) url(./img/shoes.jpg);*/
+            background-size: cover; /*상자 크기에 맞춰라 */
+            /*background-size: contain; 이미지 크기를 고정해라*/
+            background-repeat: no-repeat;
+            background-position: center; /*배경 위치 조정*/
+            /*background-attachment: fixed;*/ /*스크롤 시 배경 위치 조정*/
+            /*filter: brightness(70%) saturate(70%); 밝기 채도*/
+            padding: 1px; /* 테두리가 겹치면 같이 적용됨*/
+        }
+
+        .main-title{
+            color: white;
+            font-size: 50px;
+            margin-top: 200px;
+            text-align: center;
+        }
+
+        .main-content{
+            color: white;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .main-button{
+            padding: 15px;
+            font-size: 20px;
+            background-color: white;
+            border: none;
+            border-radius: 5px;
+            position: relative;
+            left:50%;
+            width:200px;
+            margin-left: -100px;
+        }
+
+        .text{
+            width:80%;
+            max-width: 600px;
+            padding: 25px;
+            background-color: #eee;
+            position: relative;
+            margin: 0 auto;
+            bottom:30px;
+            z-index: 5; /*높을 수록 위로 올라옴*/
+        }
+        .text * {
+            text-align: center;
+        }
+        div{
+            box-sizing: border-box; /*패딩이나 보더를 합친 크기로 맞춰라*/
+        }
+
+        /*normalize.css 검색하면 브라우저 호환성 문제 해결 가능*/
+    
+        input[type=password]{
+            padding: 20px;
+            font-size: 20px;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body style="margin:0">
+    <div class="main-background">
+        <h4 class="main-title">Buy our Shoes!</h4>
+        <p class="main-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <button class="main-button">구매하기</button>
+    </div>
+
+    <div class="text">
+        <h3>How we design our shoes</h3>
+        <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+
+    <!-- 작성한 내용이 어떤 서버 경로로 전달될지 -->
+    <form action="">
+        <input type="text" placeholder="aaaa" name="age" class="text-input">
+        <input type="password">
+        <!-- <input type="email"> 골뱅이 없으면 알려줌 -->
+        <input type="date">
+        <select name="" id="">
+            <option value="">adaw</option>
+        </select>
+        <textarea name="" id="" cols="30" rows="10" placeholder="hello"></textarea>
+        <input type="submit">
+        <button type="submit">전송</button>
+    </form>
+    
+</body>
+</html>

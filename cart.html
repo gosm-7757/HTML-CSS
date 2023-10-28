@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/cart.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+        <table>
+            <!-- thaed와 tbody는 그냥 분류하려고 사용함 (기능 차이 없음) -->
+            <thead>
+                <tr>
+                    <th><p>aaaa</p><p>aaaa</p></th>
+                    <td style="vertical-align: top;">2222</td>
+                    <td style="vertical-align: bottom;">3333</td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr></tr>
+            </tbody>
+            
+            
+        </table>
+    </div>
+
+    <div> <img src="https://mdn.mozillademos.org/files/12245/frame_image.svg" width="32" height="32">
+        <span style="vertical-align: super;">image with a default alignment.</span> 
+    </div> 
+
+    <!-- div로 테이블만들기 -->
+    <div style="display: table">
+        <div style="display:table-row;">
+            <div style="display: table-cell;">21</div>
+            <div style="display: table-cell;">23</div>
+        </div>
+    </div>
+
+
+
+    <div class="cart-background">
+        <h3>Your Shopping Cart</h3>
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th class="long">Item</th>
+                    <th>Amount</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <td><img src="./img/item1.png" style="width:50px"></td>
+                    <td>camera</td>
+                    <td>1</td>
+                    <td>7000</td>
+                    <td>7000</td>
+                </tr>
+
+                <tr>
+                    <td colspan="5" style="text-align: right;">총 가격 : 7000</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button class="btn">구매하기</button>
+        <input class="input-test" type="text">
+        <a href="#" class="custom-link">링크</a>
+    </div>
+
+
+
+    <!-- .cart-table td:nth-child(even) {
+        color: red;
+    } 
+
+    이러면 짝수로 등장하는 td에만 스타일을 줄 수도 있고
+    (odd라고 쓰면 홀수입니다)
+
+    .cart-table td:nth-child(3n+0) {
+        color: red;
+    } 이러면 3의 배수 -->
+
+</body>
+</html>
