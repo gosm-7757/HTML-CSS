@@ -50,9 +50,10 @@
       <button class="main-button">구매하기</button>
     </div>
 
+
     <div class="text">
       <h3>How we design our shoes</h3>
-      <p>
+      <p class="pseudo">
         It has survived not only five centuries, but also the leap into
         electronic typesetting, remaining essentially unchanged. It was
         popularised in the 1960s with the release of Letraset sheets containing
@@ -60,6 +61,41 @@
         like Aldus PageMaker including versions of Lorem Ipsum.
       </p>
     </div>
+
+    <input type="file">
+    <input type="range">
+    <progress value="0.5"></progress>
+    <style>
+      input[type=file]::-webkit-file-upload-button{
+        background-color: skyblue;
+        border: none;
+        appearance: none;
+      }
+
+      progress {
+  /*기본 배경은 없애주는게 좋습니다*/
+  -webkit-appearance: none;
+  -moz-appearance : none;
+  appearance: none;
+  background: white;
+/* IE10 호환성용 */
+  color: red;
+}
+progress::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2px;
+}
+progress::-webkit-progress-value {
+  background-color: red;
+  border-radius: 2px;
+}
+
+/*파이어폭스 호환성을 위해*/
+progress::-moz-progress-bar {
+  background-color: red;
+  border-radius: 2px;
+}
+    </style>
 
     <!-- 작성한 내용이 어떤 서버 경로로 전달될지 -->
     <!-- <form action="">

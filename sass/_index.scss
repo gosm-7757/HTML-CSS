@@ -1,0 +1,18 @@
+@use 'reset';
+
+@mixin 폰트스타일($구멍, $구멍2){
+    font-size: $구멍;
+    #{$구멍2}: 1px;
+    color: reset.$메인칼라;
+}
+
+/*긴 코드를 짧은 단어로 사용하고 싶을 때*/
+h2{
+    @include 폰트스타일(30px, letter-spacing);
+}
+h3{
+    @include 폰트스타일(20px, letter-spacing);
+}
+h4{
+    @include 폰트스타일(10px, letter-spacing);
+}

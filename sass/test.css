@@ -1,0 +1,90 @@
+@charset "UTF-8";
+.btn-blue, .btn-red, .btn-green {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  margin: 10px;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-green {
+  background-color: green;
+}
+
+.btn-red {
+  background-color: red;
+}
+
+.btn-blue {
+  background-color: blue;
+}
+
+.background {
+  background-color: #2a4cb2;
+}
+
+.box {
+  color: #2a4cb2;
+  font-size: 18px;
+}
+
+.main-bg {
+  /*nesting 문법*/
+  width: 100px;
+}
+.main-bg h4 {
+  /*== .main-bg h4{}*/
+  font-size: 16px;
+}
+.main-bg button {
+  color: red;
+}
+
+ul {
+  width: 400px;
+  margin: 0 auto;
+}
+ul li {
+  list-style: none;
+  border: 1px solid black;
+  height: 50px;
+  line-height: 50px;
+}
+ul li:focus {
+  background-color: skyblue;
+}
+
+.box-yellow span, .box-blue span, .box-green span {
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.box-green {
+  width: 700px;
+  height: 50px;
+  margin: 20px auto;
+  background-color: lightgreen;
+  border-radius: 10px;
+  line-height: 50px;
+}
+.box-blue {
+  width: 700px;
+  height: 50px;
+  margin: 20px auto;
+  background-color: skyblue;
+  border-radius: 10px;
+  line-height: 50px;
+}
+.box-yellow {
+  width: 700px;
+  height: 50px;
+  margin: 20px auto;
+  background-color: lightyellow;
+  border-radius: 10px;
+  line-height: 50px;
+}/*# sourceMappingURL=test.css.map */

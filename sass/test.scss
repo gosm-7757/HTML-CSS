@@ -1,0 +1,105 @@
+%btn{
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center
+}
+
+.btn-green{
+    @extend %btn;
+    background-color:green;
+}
+
+.btn-red{
+    @extend %btn;
+    background-color:red;
+}
+
+.btn-blue{
+    @extend %btn;
+    background-color:blue;
+}
+
+
+$mainColor : #2a4cb2;
+$기본사이즈 : 16px;
+
+
+.background{
+    background-color: $mainColor;
+}
+
+.box{
+    color:$mainColor;
+    font-size: ($기본사이즈 + 2px);
+}
+
+.main-bg{
+    /*nesting 문법*/
+    width: 100px;
+    h4{
+        /*== .main-bg h4{}*/
+        font-size: 16px;
+    }
+    button{
+        color: red;
+    }
+}
+
+
+
+ul{
+    width: 400px;
+    margin: 0 auto;
+    li{
+        list-style: none;
+        border: 1px solid black;
+        height: 50px;
+        line-height: 50px;
+    }
+    li:focus{
+        background-color: skyblue;
+    }
+}
+
+@mixin box-style($bgc){
+    width: 700px;
+    height: 50px;
+    margin: 20px auto;
+    background-color: $bgc;
+    border-radius: 10px;
+    line-height: 50px;
+}
+
+%span{
+    font-weight: bold;
+    margin-left: 10px
+}
+
+.box-green{
+    @include box-style(lightgreen);
+    span{
+        @extend %span;
+    }
+}
+
+.box-blue{
+    @include box-style(skyblue);
+    span{
+        @extend %span;
+    }
+}
+
+.box-yellow{
+    @include box-style(lightyellow);
+    span{
+        @extend %span;
+    }
+}
+

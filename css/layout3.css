@@ -105,6 +105,15 @@ span {
   text-align: center;
 }
 
+.pseudo::first-line{
+  font-size: 30px;
+}
+
+.pseudo::after{
+  content: '안녕';
+  color: red;
+}
+
 div {
   box-sizing: border-box;
   /*패딩이나 보더를 합친 크기로 맞춰라*/
